@@ -1,0 +1,173 @@
+{
+  "nav": {
+    "home": "Home",
+    "login": "Login",
+    "register": "Register",
+    "dashboard": "Dashboard",
+    "logout": "Logout",
+    "contact": "Contact",
+    "demo": "Request Demo",
+    "admin": "Admin"
+  },
+  "home": {
+    "hero_title": "Grow Better Mushrooms",
+    "hero_subtitle": "Track your farm, manage your crops, and grow your business with Naturelytix.",
+    "get_started": "Get Started",
+    "learn_more": "Learn More",
+    "features_title": "Why Naturelytix?",
+    "feature_1_title": "Easy Tracking",
+    "feature_1_desc": "Track your mushroom crops day by day with simple tools.",
+    "feature_2_title": "Smart Insights",
+    "feature_2_desc": "Get helpful tips to improve your mushroom yield.",
+    "feature_3_title": "Simple & Fast",
+    "feature_3_desc": "Works on your phone, even with slow internet."
+  },
+  "auth": {
+    "login_title": "Welcome Back",
+    "login_subtitle": "Login to your Naturelytix account",
+    "register_title": "Create Account",
+    "register_subtitle": "Join Naturelytix today",
+    "full_name": "Full Name",
+    "email": "Email Address",
+    "password": "Password",
+    "confirm_password": "Confirm Password",
+    "login_btn": "Login",
+    "register_btn": "Create Account",
+    "no_account": "Don't have an account?",
+    "have_account": "Already have an account?",
+    "signup_link": "Sign up",
+    "login_link": "Login",
+    "logging_in": "Logging in...",
+    "registering": "Creating account..."
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Welcome",
+    "profile_title": "Your Profile",
+    "email": "Email",
+    "full_name": "Full Name",
+    "member_since": "Member Since",
+    "initials": "Initials",
+    "coming_soon": "More features coming soon!",
+    "coming_soon_desc": "We are working hard to bring you crop tracking, reports, and more."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Have a question? We'd love to hear from you.",
+    "name": "Full Name",
+    "email": "Email Address",
+    "phone_optional": "Phone Number (optional)",
+    "subject": "Subject (optional)",
+    "message": "Message",
+    "submit": "Send Message",
+    "submitting": "Sending...",
+    "success": "Your message has been sent! We'll get back to you soon.",
+    "subject_placeholder": "How can we help?",
+    "message_placeholder": "Tell us more about your question..."
+  },
+  "demo": {
+    "title": "Request a Demo",
+    "subtitle": "See Naturelytix in action. We'll schedule a personalized walkthrough for you.",
+    "name": "Full Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "farm_size": "Farm Size (optional)",
+    "preferred_date": "Preferred Date (optional)",
+    "submit": "Request Demo",
+    "submitting": "Submitting...",
+    "success": "Demo request received! We'll contact you shortly to schedule a time.",
+    "farm_size_placeholder": "e.g. 2 acres"
+  },
+  "unsubscribe": {
+    "title": "Unsubscribe",
+    "subtitle": "Enter your email address to unsubscribe from our newsletter.",
+    "email": "Email Address",
+    "submit": "Unsubscribe",
+    "submitting": "Unsubscribing...",
+    "success": "You've been successfully unsubscribed from our newsletter.",
+    "not_found": "This email is not subscribed or was already unsubscribed."
+  },
+  "admin": {
+    "sidebar": {
+      "dashboard": "Dashboard",
+      "leads": "Leads",
+      "contacts": "Contacts",
+      "demos": "Demo Requests",
+      "newsletter": "Newsletter"
+    },
+    "stats": {
+      "title": "Overview",
+      "total_leads": "Total Leads",
+      "new_today": "New Today",
+      "total_contacts": "Contacts",
+      "total_demos": "Demo Requests",
+      "subscribers": "Subscribers"
+    },
+    "leads": {
+      "title": "Leads",
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "role": "Role",
+      "source": "Source",
+      "status": "Status",
+      "created": "Created",
+      "actions": "Actions",
+      "update_status": "Update Status",
+      "delete": "Delete",
+      "confirm_delete": "Delete this lead? This cannot be undone.",
+      "empty": "No leads yet.",
+      "save": "Save"
+    },
+    "contacts": {
+      "title": "Contact Submissions",
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "subject": "Subject",
+      "message": "Message",
+      "created": "Date",
+      "empty": "No contact submissions yet."
+    },
+    "demos": {
+      "title": "Demo Requests",
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "farm_size": "Farm Size",
+      "preferred_date": "Preferred Date",
+      "status": "Status",
+      "created": "Submitted",
+      "update_status": "Update Status",
+      "empty": "No demo requests yet.",
+      "save": "Save"
+    },
+    "newsletter": {
+      "title": "Newsletter Subscribers",
+      "email": "Email Address",
+      "subscribed_on": "Subscribed On",
+      "empty": "No active subscribers."
+    },
+    "loading": "Loading...",
+    "error": "Failed to load data. Please try again.",
+    "view": "View",
+    "back": "Back to list"
+  },
+  "common": {
+    "cancel": "Cancel"
+  },
+  "errors": {
+    "required": "This field is required.",
+    "invalid_email": "Please enter a valid email address.",
+    "password_min": "Password must be at least 8 characters.",
+    "password_max": "Password must be at most 32 characters.",
+    "password_mismatch": "Passwords do not match.",
+    "login_failed": "Login failed. Please check your email and password.",
+    "register_failed": "Registration failed. Please try again.",
+    "generic": "Something went wrong. Please try again."
+  },
+  "lang": {
+    "switch": "हिंदी में देखें",
+    "current": "English"
+  }
+}
