@@ -93,7 +93,8 @@
       "leads": "Leads",
       "contacts": "Contacts",
       "demos": "Demo Requests",
-      "newsletter": "Newsletter"
+      "newsletter": "Newsletter",
+      "create_admin": "Create Admin"
     },
     "stats": {
       "title": "Overview",
@@ -147,6 +148,12 @@
       "email": "Email Address",
       "subscribed_on": "Subscribed On",
       "empty": "No active subscribers."
+    },
+    "create_admin": {
+      "title": "Create Admin",
+      "submit": "Create Admin",
+      "submitting": "Creating...",
+      "success": "Admin user created successfully."
     },
     "loading": "Loading...",
     "error": "Failed to load data. Please try again.",

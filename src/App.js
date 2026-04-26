@@ -8,7 +8,6 @@ import AdminRoute from './components/layout/AdminRoute';
 
 import Home from './pages/Home';
 import Login from './pages/Login';
-import Register from './pages/Register';
 import Dashboard from './pages/Dashboard';
 import Contact from './pages/Contact';
 import Demo from './pages/Demo';
@@ -20,6 +19,7 @@ import LeadDetail from './pages/admin/LeadDetail';
 import ContactsList from './pages/admin/ContactsList';
 import DemoRequestsList from './pages/admin/DemoRequestsList';
 import NewsletterSubscribers from './pages/admin/NewsletterSubscribers';
+import CreateAdmin from './pages/admin/CreateAdmin';
 
 export default function App() {
   return (
@@ -32,7 +32,6 @@ export default function App() {
               {/* Public */}
               <Route path="/" element={<Home />} />
               <Route path="/login" element={<Login />} />
-              <Route path="/register" element={<Register />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/demo" element={<Demo />} />
               <Route path="/unsubscribe" element={<Unsubscribe />} />
@@ -54,6 +53,7 @@ export default function App() {
               <Route path="/admin/contacts" element={<AdminRoute><ContactsList /></AdminRoute>} />
               <Route path="/admin/demo-requests" element={<AdminRoute><DemoRequestsList /></AdminRoute>} />
               <Route path="/admin/newsletter" element={<AdminRoute><NewsletterSubscribers /></AdminRoute>} />
+              <Route path="/admin/create-admin" element={<AdminRoute><CreateAdmin /></AdminRoute>} />
 
               <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>

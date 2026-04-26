@@ -37,6 +37,7 @@ export default function NewsletterSubscribers() {
                 data={subscribers}
                 emptyMessage={t('admin.newsletter.empty')}
                 emptyIcon="📰"
+                mobileColumns={['email', 'createdAt']}
               />
             )}
           </div>

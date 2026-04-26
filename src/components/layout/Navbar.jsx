@@ -29,12 +29,16 @@ export default function Navbar() {
         {/* Desktop */}
         <div className="hidden sm:flex items-center gap-1">
           <LanguageToggle />
-          <Link to="/contact" className="text-sm font-medium text-gray-600 hover:text-primary-700 px-3 py-1.5 rounded-lg hover:bg-primary-50 transition-colors">
-            {t('nav.contact')}
-          </Link>
-          <Link to="/demo" className="text-sm font-medium text-gray-600 hover:text-primary-700 px-3 py-1.5 rounded-lg hover:bg-primary-50 transition-colors">
-            {t('nav.demo')}
-          </Link>
+          {!isAdmin && (
+            <>
+              <Link to="/contact" className="text-sm font-medium text-gray-600 hover:text-primary-700 px-3 py-1.5 rounded-lg hover:bg-primary-50 transition-colors">
+                {t('nav.contact')}
+              </Link>
+              <Link to="/demo" className="text-sm font-medium text-gray-600 hover:text-primary-700 px-3 py-1.5 rounded-lg hover:bg-primary-50 transition-colors">
+                {t('nav.demo')}
+              </Link>
+            </>
+          )}
           {isAuthenticated ? (
             <>
               <Link to="/dashboard" className="text-sm font-medium text-gray-600 hover:text-primary-700 px-3 py-1.5 rounded-lg hover:bg-primary-50 transition-colors">
@@ -54,11 +58,8 @@ export default function Navbar() {
             </>
           ) : (
             <>
-              <Link to="/login" className="text-sm font-medium text-gray-600 hover:text-primary-700 px-3 py-1.5 rounded-lg hover:bg-primary-50 transition-colors">
+              <Link to="/login" className="text-sm font-medium bg-primary-600 hover:bg-primary-700 text-white px-4 py-2 rounded-xl transition-colors">
                 {t('nav.login')}
-              </Link>
-              <Link to="/register" className="text-sm font-medium bg-primary-600 hover:bg-primary-700 text-white px-4 py-2 rounded-xl transition-colors">
-                {t('nav.register')}
               </Link>
             </>
           )}
@@ -82,8 +83,12 @@ export default function Navbar() {
       {menuOpen && (
         <div className="sm:hidden bg-white border-t border-primary-100 px-4 py-3 flex flex-col gap-2">
           <LanguageToggle />
-          <Link to="/contact" onClick={closeMenu} className="text-sm font-medium text-gray-700 py-2">{t('nav.contact')}</Link>
-          <Link to="/demo" onClick={closeMenu} className="text-sm font-medium text-gray-700 py-2">{t('nav.demo')}</Link>
+          {!isAdmin && (
+            <>
+              <Link to="/contact" onClick={closeMenu} className="text-sm font-medium text-gray-700 py-2">{t('nav.contact')}</Link>
+              <Link to="/demo" onClick={closeMenu} className="text-sm font-medium text-gray-700 py-2">{t('nav.demo')}</Link>
+            </>
+          )}
           {isAuthenticated ? (
             <>
               <Link to="/dashboard" onClick={closeMenu} className="text-sm font-medium text-gray-700 py-2">
@@ -100,11 +105,8 @@ export default function Navbar() {
             </>
           ) : (
             <>
-              <Link to="/login" onClick={closeMenu} className="text-sm font-medium text-gray-700 py-2">
+              <Link to="/login" onClick={closeMenu} className="text-sm font-medium text-primary-700 py-2">
                 {t('nav.login')}
-              </Link>
-              <Link to="/register" onClick={closeMenu} className="text-sm font-medium text-primary-700 py-2">
-                {t('nav.register')}
               </Link>
             </>
           )}

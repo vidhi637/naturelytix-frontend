@@ -89,6 +89,7 @@ export default function DemoRequestsList() {
                 data={demos}
                 emptyMessage={t('admin.demos.empty')}
                 emptyIcon="📅"
+                mobileColumns={['name', 'email', 'status', 'actions']}
               />
             )}
           </div>

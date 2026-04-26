@@ -109,6 +109,7 @@ export default function LeadsList() {
                 data={leads}
                 emptyMessage={t('admin.leads.empty')}
                 emptyIcon="👥"
+                mobileColumns={['name', 'email', 'status', 'actions']}
               />
             )}
           </div>

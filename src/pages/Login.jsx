@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useAuth } from '../contexts/AuthContext';
 import { useForm } from '../hooks/useForm';
@@ -77,12 +77,6 @@ export default function Login() {
             </Button>
           </form>
 
-          <p className="text-center text-sm text-gray-500">
-            {t('auth.no_account')}{' '}
-            <Link to="/register" className="text-primary-600 font-medium hover:underline">
-              {t('auth.signup_link')}
-            </Link>
-          </p>
         </div>
       </Card>
     </div>

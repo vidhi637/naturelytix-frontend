@@ -52,6 +52,7 @@ export default function ContactsList() {
                 data={contacts}
                 emptyMessage={t('admin.contacts.empty')}
                 emptyIcon="✉️"
+                mobileColumns={['name', 'email', 'message', 'createdAt']}
               />
             )}
           </div>
