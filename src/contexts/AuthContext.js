@@ -10,16 +10,18 @@ export function AuthProvider({ children }) {
 
   const login = useCallback(async (email, password) => {
     const { data } = await authApi.login(email, password);
-    saveSession(data.token, data.user);
-    setToken(data.token);
+    const tokenValue = typeof data.token === 'string' ? data.token : data.token?.token;
+    saveSession(tokenValue, data.user);
+    setToken(tokenValue);
     setUser(data.user);
     return data;
   }, []);
 
   const register = useCallback(async (fullName, email, password, passwordConfirmation) => {
     const { data } = await authApi.register(fullName, email, password, passwordConfirmation);
-    saveSession(data.token, data.user);
-    setToken(data.token);
+    const tokenValue = typeof data.token === 'string' ? data.token : data.token?.token;
+    saveSession(tokenValue, data.user);
+    setToken(tokenValue);
     setUser(data.user);
     return data;
   }, []);
