@@ -10,7 +10,7 @@ export function AuthProvider({ children }) {
 
   const login = useCallback(async (email, password) => {
     const { data } = await authApi.login(email, password);
-    const tokenValue = typeof data.token === 'string' ? data.token : data.token?.token;
+    const tokenValue = typeof data.token === 'string' ? data.token : data.token?.token || data.token?.value;
     saveSession(tokenValue, data.user);
     setToken(tokenValue);
     setUser(data.user);
@@ -19,7 +19,7 @@ export function AuthProvider({ children }) {
 
   const register = useCallback(async (fullName, email, password, passwordConfirmation) => {
     const { data } = await authApi.register(fullName, email, password, passwordConfirmation);
-    const tokenValue = typeof data.token === 'string' ? data.token : data.token?.token;
+    const tokenValue = typeof data.token === 'string' ? data.token : data.token?.token || data.token?.value;
     saveSession(tokenValue, data.user);
     setToken(tokenValue);
     setUser(data.user);

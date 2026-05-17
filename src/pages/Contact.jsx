@@ -22,9 +22,19 @@ export default function Contact() {
 
   const validate = () => {
     const errs = {};
-    if (!values.name.trim()) errs.name = t('errors.required');
-    if (!values.email.trim()) errs.email = t('errors.required');
-    if (!values.message.trim()) errs.message = t('errors.required');
+    const name = values.name.trim();
+    const email = values.email.trim();
+    const message = values.message.trim();
+
+    if (!name) errs.name = t('errors.required');
+    else if (name.length < 2) errs.name = t('errors.name_min');
+
+    if (!email) errs.email = t('errors.required');
+    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) errs.email = t('errors.invalid_email');
+
+    if (!message) errs.message = t('errors.required');
+    else if (message.length < 5) errs.message = t('errors.message_min');
+
     setErrors(errs);
     return Object.keys(errs).length === 0;
   };
